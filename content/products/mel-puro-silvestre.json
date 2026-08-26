@@ -1,0 +1,26 @@
+{
+  "id": "mel-puro-silvestre",
+  "name": "Mel Puro Silvestre",
+  "subtitle": "Direto da colmeia, sem processamento",
+  "category": "Mel",
+  "strength": "100% puro",
+  "description": "Mel de flores silvestres do cerrado brasileiro. Não pasteurizado, não filtrado industrialmente — mantém enzimas, vitaminas e propriedades naturais intactas. Cada pote reflete a biodiversidade da região.",
+  "benefits": [
+    "Fonte natural de energia",
+    "Ação prebiótica",
+    "Alivia a garganta",
+    "Cicatrização tópica"
+  ],
+  "usage": "Consumir puro, com frutas, chás ou receitas. Não aquecer acima de 40°C para preservar enzimas.",
+  "dosage": "1-2 colheres de sopa ao dia",
+  "presentation": "Pote de vidro 500g",
+  "shelfLife": "24 meses (não expira)",
+  "storage": "Local seco, temperatura ambiente",
+  "image": "/products/mel-puro-silvestre.jpg",
+  "certifications": ["Orgânico", "Artesanal", "Rastreável"],
+  "ingredients": ["Mel de flores silvestres (100%)"],
+  "origin": "Apiário próprio, cerrado brasileiro",
+  "weight": 0.5,
+  "price": "R$ 64,90",
+  "oldPrice": "R$ 79,90"
+}

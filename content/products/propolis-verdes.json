@@ -1,0 +1,30 @@
+{
+  "id": "propolis-verde-30",
+  "name": "Própolis Verde 30%",
+  "subtitle": "Concentrado de defesa natural",
+  "category": "Própolis",
+  "strength": "30%",
+  "description": "Extrato puro de própolis verde, padronizado em 30% de compostos fenólicos. Fonte de antioxidantes naturais e apoiador do sistema imunológico. Sem álcool, processo de extração a frio preservando todos os bioativos.",
+  "benefits": [
+    "Fortalecimento imunológico",
+    "Saúde respiratória",
+    "Ação antioxidante",
+    "Propriedades anti-inflamatórias"
+  ],
+  "usage": "30 gotas diluídas em água ou mel, 3 vezes ao dia. Agitar bem antes de usar.",
+  "dosage": "30 gotas por porção",
+  "presentation": "Frasco com conta-gotas de 30mL",
+  "shelfLife": "12 meses após aberto",
+  "storage": "Conservar em local fresco e ao abrigo da luz",
+  "image": "/products/propolis-verde-30.jpg",
+  "certifications": ["Orgânico", "Selo Verde", "Rastreável"],
+  "ingredients": [
+    "Extrato de própolis verde (30% compostos fenólicos)",
+    "Água purificada",
+    "Glicerina vegetal"
+  ],
+  "origin": "Apiário próprio, cerrado cerrado brasileiro",
+  "weight": 0.05,
+  "price": "R$ 89,90",
+  "oldPrice": "R$ 119,90"
+}

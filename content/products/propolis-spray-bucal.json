@@ -1,0 +1,31 @@
+{
+  "id": "propolis-spray-bucal",
+  "name": "Spray Bucal de Própolis",
+  "subtitle": "Proteção imediata para boca e garganta",
+  "category": "Própolis",
+  "strength": "15%",
+  "description": "Spray sublingual de própolis verde 15% com alecrim e stevia. Fórmula sem álcool, prática para uso ao longo do dia. Ideal para viagens, escritório e atividades ao ar livre.",
+  "benefits": [
+    "Alívio imediato de irritação",
+    "Hálito fresco",
+    "Proteção bucal",
+    "Conveniência em formato spray"
+  ],
+  "usage": "2-3 borrifadas na boca ou garganta, sempre que necessário. Não exceder 10 borrifadas/dia.",
+  "dosage": "2 borrifadas por aplicação",
+  "presentation": "Frasco spray de 30mL",
+  "shelfLife": "12 meses",
+  "storage": "Local fresco e ao abrigo da luz",
+  "image": "/products/propolis-spray-bucal.jpg",
+  "certifications": ["Sem álcool", "Vegano", "Rastreável"],
+  "ingredients": [
+    "Extrato de própolis verde (15%)",
+    "Extrato de alecrim",
+    "Stevia",
+    "Água purificada"
+  ],
+  "origin": "Apiário próprio, cerrado brasileiro",
+  "weight": 0.04,
+  "price": "R$ 49,90",
+  "oldPrice": "R$ 59,90"
+}

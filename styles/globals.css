@@ -3,16 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom properties */
+/* Custom properties - Paleta Apicola (Mel / Amarelo / Dourado / Âmbar) */
 :root {
-  --bg: #0a0a0f;
-  --bg-subtle: #12121a;
-  --fg: #e8e8f0;
-  --muted: #6b6b80;
-  --accent: #2d5a27;
-  --accent-light: #4a7c40;
-  --card: #16161f;
-  --border: #2a2a3a;
+  --bg: #0f0d08;
+  --bg-subtle: #1a1610;
+  --fg: #f5e6c8;
+  --muted: #a89870;
+  --accent: #f5a623;       /* Dourado mel */
+  --accent-light: #ffd23f; /* Amarelo abelha */
+  --accent-dark: #c4821c;  /* Mel escuro */
+  --honey: #e89c1a;        /* Cor do mel */
+  --amber: #ffbf00;        /* Âmbar */
+  --card: #15110b;
+  --border: #3d2e1a;
+  --honey-glow: rgba(245, 166, 35, 0.15);
 }
 
 /* Body */

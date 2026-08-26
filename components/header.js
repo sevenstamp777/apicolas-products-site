@@ -7,7 +7,7 @@ export default function Header() {
         <nav className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-full bg-[var(--accent)] flex items-center justify-center text-white font-bold text-sm transition-transform group-hover:scale-110">
+            <div className="w-8 h-8 rounded-full bg-[var(--accent)] flex items-center justify-center text-[var(--bg)] font-bold text-sm transition-transform group-hover:scale-110">
               🐝
             </div>
             <span className="font-display font-semibold text-lg text-[var(--fg)]">
@@ -37,7 +37,7 @@ export default function Header() {
               href={`https://wa.me/55${process.env.NEXT_PUBLIC_WHATSAPP || '11999999999'}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-2 px-4 py-2 bg-[var(--accent)] hover:bg-[var(--accent-light)] text-white text-sm font-medium rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/20"
+              className="hidden sm:flex items-center gap-2 px-4 py-2 bg-[var(--accent)] hover:bg-[var(--amber)] text-[var(--bg)] text-sm font-medium rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/20"
             >
               <span>💬</span>
               <span>Fale Conosco</span>

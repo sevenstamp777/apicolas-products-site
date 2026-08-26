@@ -24,15 +24,15 @@ export default function Home({ products }) {
     <Layout>
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-[var(--border)]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--accent)]/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--honey)]/20 via-[var(--accent-light)]/10 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="inline-block px-3 py-1 rounded-full bg-[var(--accent)]/10 text-[var(--accent-light)] text-xs font-medium border border-[var(--accent)]/20 mb-6">
+            <span className="inline-block px-3 py-1 rounded-full bg-[var(--accent)]/10 text-[var(--amber)] text-xs font-medium border border-[var(--amber)]/20 mb-6">
               🐝 100% Natural · Direto do Apiário
             </span>
             <h1 className="font-display text-4xl md:text-6xl font-bold tracking-tight text-[var(--fg)] mb-6 leading-tight">
               A natureza na sua
-              <span className="block bg-gradient-to-r from-[var(--accent)] via-[var(--accent-light)] to-[var(--accent)] bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[var(--amber)] via-[var(--accent-light)] to-[var(--accent)] bg-clip-text text-transparent">
                 forma mais pura
               </span>
             </h1>
@@ -43,7 +43,7 @@ export default function Home({ products }) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#produtos"
-                className="px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent-light)] text-white font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
+                className="px-8 py-4 bg-[var(--accent)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
               >
                 Ver Produtos
               </a>
@@ -113,7 +113,7 @@ export default function Home({ products }) {
             href="https://wa.me/5511999999999"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent-light)] text-white font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--accent)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
           >
             <span>💬</span>
             Falar pelo WhatsApp

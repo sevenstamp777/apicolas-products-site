@@ -9,7 +9,7 @@ export default function CapturaPage() {
         <section className="py-24 border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="text-center max-w-3xl mx-auto mb-12">
-              <span className="inline-block px-3 py-1 rounded-full bg-[var(--accent)]/10 text-[var(--accent-light)] text-xs font-medium border border-[var(--accent)]/20 mb-6">
+              <span className="inline-block px-3 py-1 rounded-full bg-[var(--accent)]/10 text-[var(--amber)] text-xs font-medium border border-[var(--amber)]/20 mb-6">
                 🐝 Comunidade de Saúde Natural
               </span>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--fg)] mb-6 leading-tight">
@@ -112,7 +112,7 @@ export default function CapturaPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/captura"
-                className="px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent-light)] text-white font-semibold rounded-xl transition-all hover:shadow-lg"
+                className="px-8 py-4 bg-[var(--accent)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-xl transition-all hover:shadow-lg"
               >
                 Inscrever-se Gratuito
               </a>

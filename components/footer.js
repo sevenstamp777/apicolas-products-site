@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-full bg-[var(--accent)] flex items-center justify-center text-white font-bold text-sm">
+              <div className="w-8 h-8 rounded-full bg-[var(--accent)] flex items-center justify-center text-[var(--bg)] font-bold text-sm">
                 🐝
               </div>
               <span className="font-display font-semibold text-lg text-[var(--fg)]">
@@ -22,10 +22,10 @@ export default function Footer() {
               Própolis verde, mel puro e derivados com qualidade premium.
             </p>
             <div className="flex gap-4 mt-6">
-              <a href="#" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">
+              <a href="#" className="text-[var(--muted)] hover:text-[var(--amber)] transition-colors">
                 Instagram
               </a>
-              <a href="#" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">
+              <a href="#" className="text-[var(--muted)] hover:text-[var(--amber)] transition-colors">
                 WhatsApp
               </a>
             </div>

@@ -138,7 +138,7 @@ export default function QuizPage() {
                       className={`
                         w-full p-4 text-left rounded-xl border transition-all
                         ${answers[quizQuestions[currentStep].id] === option.value
-                          ? 'bg-[var(--accent)]/10 border-[var(--accent)] text-[var(--accent-light)]'
+                          ? 'bg-[var(--accent)]/10 border-[var(--accent)] text-[var(--amber)]'
                           : 'bg-[var(--bg-subtle)] border-[var(--border)] hover:bg-[var(--border)]/50 hover:translate-x-1'
                         }
                       `}
@@ -184,7 +184,7 @@ export default function QuizPage() {
                       px-6 py-2 rounded-lg text-sm font-medium transition-all
                       ${!answers[quizQuestions[currentStep].id]
                         ? 'bg-[var(--accent)]/30 cursor-not-allowed text-white/50'
-                        : 'bg-[var(--accent)] hover:bg-[var(--accent-light)] text-white'
+                        : 'bg-[var(--accent)] hover:bg-[var(--amber)] text-[var(--bg)]'
                       }
                     `}
                   >

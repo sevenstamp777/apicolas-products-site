@@ -131,7 +131,7 @@ export default function CaptureForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent-light)] disabled:bg-[var(--accent)]/50 disabled:cursor-not-allowed text-white font-semibold rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
+        className="w-full px-8 py-4 bg-[var(--accent)] hover:bg-[var(--amber)] disabled:bg-[var(--accent)]/50 disabled:cursor-not-allowed text-[var(--bg)] font-semibold rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
       >
         {isSubmitting ? 'Enviando...' : 'Receber Recomendação'}
       </button>

@@ -183,8 +183,8 @@ export default function QuizPage() {
                     className={`
                       px-6 py-2 rounded-lg text-sm font-medium transition-all
                       ${!answers[quizQuestions[currentStep].id]
-                        ? 'bg-[var(--accent)]/30 cursor-not-allowed text-white/50'
-                        : 'bg-[var(--accent)] hover:bg-[var(--amber)] text-[var(--bg)]'
+                        ? 'bg-[var(--honey)]/30 cursor-not-allowed text-white/50'
+                        : 'bg-[var(--honey)] hover:bg-[var(--amber)] text-[var(--bg)]'
                       }
                     `}
                   >

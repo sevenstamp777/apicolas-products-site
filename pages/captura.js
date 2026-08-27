@@ -112,7 +112,7 @@ export default function CapturaPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/captura"
-                className="px-8 py-4 bg-[var(--accent)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-xl transition-all hover:shadow-lg"
+                className="px-8 py-4 bg-[var(--honey)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-xl transition-all hover:shadow-lg"
               >
                 Inscrever-se Gratuito
               </a>

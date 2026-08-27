@@ -50,7 +50,7 @@ export default function ProductsPage({ products }) {
         <section className="py-8 border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="flex flex-wrap gap-2 justify-center">
-              <button className="px-4 py-2 rounded-full bg-[var(--accent)] text-white text-sm font-medium">
+              <button className="px-4 py-2 rounded-full bg-[var(--honey)] text-white text-sm font-medium">
                 Todos ({products.length})
               </button>
               {Object.keys(categories).map((cat) => (

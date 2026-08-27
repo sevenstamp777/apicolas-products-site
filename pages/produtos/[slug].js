@@ -153,7 +153,7 @@ export default function ProductDetailPage({ product }) {
               href="https://wa.me/5511999999999"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent-light)] text-white font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--honey)] hover:bg-[var(--amber)] text-white font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--honey)]/30"
             >
               <span>💬</span>
               Comprar via WhatsApp

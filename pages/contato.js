@@ -198,7 +198,7 @@ export default function ContatoPage() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent-light)] text-white font-semibold rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-8 py-4 bg-[var(--honey)] hover:bg-[var(--amber)] text-white font-semibold rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-[var(--honey)]/30 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {loading ? 'Enviando...' : 'Enviar Mensagem'}
                   </button>

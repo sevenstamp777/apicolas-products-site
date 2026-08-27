@@ -46,7 +46,7 @@ export default function Home({ products }) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#produtos"
-                className="px-8 py-4 bg-[var(--accent)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
+                className="px-8 py-4 bg-[var(--honey)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--honey)]/30"
               >
                 Ver Produtos
               </a>
@@ -116,7 +116,7 @@ export default function Home({ products }) {
             href="https://wa.me/5511999999999"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--accent)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--honey)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--honey)]/30"
           >
             <span>💬</span>
             Falar pelo WhatsApp

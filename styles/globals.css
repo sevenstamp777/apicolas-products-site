@@ -3,20 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom properties - Paleta Apicola (Mel / Amarelo / Dourado / Âmbar) */
+/* Custom properties - Paleta Mel, Própolis & Cia (baseada no logo) */
 :root {
-  --bg: #0f0d08;
-  --bg-subtle: #1a1610;
-  --fg: #f5e6c8;
-  --muted: #a89870;
-  --accent: #f5a623;       /* Dourado mel */
-  --accent-light: #ffd23f; /* Amarelo abelha */
-  --accent-dark: #c4821c;  /* Mel escuro */
-  --honey: #e89c1a;        /* Cor do mel */
-  --amber: #ffbf00;        /* Âmbar */
-  --card: #15110b;
+  --bg: #1a1410;
+  --bg-subtle: #231c14;
+  --fg: #fee3d2;
+  --muted: #b89870;
+  --accent: #a4724c;       /* Marrom do logo */
+  --accent-light: #fee3d2; /* Creme do logo */
+  --accent-dark: #7a5535;  /* Marrom escuro */
+  --honey: #c4820c;        /* Dourado abelha */
+  --amber: #e8a020;        /* Âmbar quente */
+  --teal: #2196a8;         /* Turquesa favas */
+  --coral: #e85050;        /* Coral favas */
+  --card: #1e1710;
   --border: #3d2e1a;
-  --honey-glow: rgba(245, 166, 35, 0.15);
+  --honey-glow: rgba(164, 114, 76, 0.2);
 }
 
 /* Body */

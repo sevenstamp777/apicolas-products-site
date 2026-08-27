@@ -1,0 +1,26 @@
+{
+  "id": "geleia-real",
+  "name": "Geleia Real",
+  "subtitle": "O elixir da natureza",
+  "category": "Geleia Real",
+  "strength": "Pura",
+  "description": "Geleia real fresca, colhida diretamente das colmeias. Rico em vitaminas, minerais, aminoácidos e ácido 10-HDA. Considerado o suplemento natural mais completo da natureza.",
+  "benefits": [
+    "Fortalece o sistema imunológico",
+    "Melhora a disposição e energia",
+    "Ação anti-inflamatória natural",
+    "Rico em vitaminas do complexo B"
+  ],
+  "usage": "Consumir 1 a 2 gramas ao dia, preferencialmente em jejum. Puro ou diluído em água fria.",
+  "dosage": "1-2g ao dia",
+  "presentation": "Pote de vidro 15g",
+  "shelfLife": "6 meses congelado, 3 meses refrigerado",
+  "storage": "Manter refrigerado ou congelado",
+  "image": "/products/geleia-real.jpg",
+  "certifications": ["Pura", "Artesanal", "Rastreável"],
+  "ingredients": ["Geleia real fresca (100%)"],
+  "origin": "Apiário próprio, cerrado brasileiro",
+  "weight": 0.015,
+  "price": "R$ 169,00",
+  "oldPrice": ""
+}

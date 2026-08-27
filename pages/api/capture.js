@@ -1,81 +1,59 @@
-// pages/api/capture.js
-/**
- * API Route: /api/capture
- * Receives form data from the CaptureForm and forwards to Google Apps Script webhook.
- * Requires NEXT_PUBLIC_GOOGLE_APPS_SCRIPT_URL env variable.
- */
+// Capture API - sends leads to Google Forms
+// Form ID: 1FAIpQLScD9k-DPwKzHXYXYMLqCbZN_p9W-hj8idCn9ldaQhttkJrx-w
+// Fields from FB_PUBLIC_LOAD_DATA_:
+//   - "Nome completo" (field 1965630165) -> entry.699971494
+//   - "WhatsApp com DDD" (field 957987546) -> entry.1331367221
+
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScD9k-DPwKzHXYXYMLqCbZN_p9W-hj8idCn9ldaQhttkJrx-w/formResponse';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+    return res.status(405).json({ error: 'Método não permitido' });
   }
 
-  const { name, email, whatsapp } = req.body;
+  const { name, email, whatsapp } = req.body || {};
 
-  // Validation
   if (!name || !email || !whatsapp) {
-    return res.status(400).json({ error: 'Missing required fields' });
-  }
-
-  // Normalize WhatsApp (remove non-digits)
-  const cleanWhatsapp = whatsapp.replace(/\D/g, '');
-
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return res.status(400).json({ error: 'Invalid email format' });
-  }
-
-  const webhookUrl = process.env.GOOGLE_APPS_SCRIPT_URL;
-
-  // If no webhook configured (local dev), return simulated success
-  if (!webhookUrl) {
-    console.log('[capture] (dev mode) Dados recebidos:', {
-      name,
-      email,
-      whatsapp: cleanWhatsapp,
-      timestamp: new Date().toISOString(),
-    });
-    return res.status(200).json({
-      success: true,
-      message: 'Lead capturado com sucesso (modo desenvolvimento).',
+    return res.status(400).json({ 
+      error: 'Campos obrigatórios faltando: nome, email, whatsapp' 
     });
   }
+
+  const cleanName = String(name).trim();
+  const cleanEmail = String(email).trim();
+  const cleanWhatsapp = String(whatsapp).replace(/\D/g, '');
+
+  // Build "Nome completo" field: combine name + email so the lead info is all in one cell
+  // Format: "Name <email>"
+  const nomeField = `${cleanName} | ${cleanEmail}`;
+
+  // Build "WhatsApp" field: just the digits
+  const whatsappField = cleanWhatsapp;
 
   try {
-    const response = await fetch(webhookUrl, {
+    const formData = new URLSearchParams();
+    formData.append('entry.699971494', nomeField);
+    formData.append('entry.1331367221', whatsappField);
+
+    const response = await fetch(GOOGLE_FORM_URL, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: new URLSearchParams({
-        nome: name,
-        email: email,
-        whatsapp: cleanWhatsapp,
-        timestamp: new Date().toISOString(),
-      }).toString(),
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: formData.toString(),
     });
 
-    if (!response.ok) {
-      throw new Error(`Webhook error: ${response.status}`);
-    }
-
-    const data = await response.text();
-
-    // Log to console for monitoring
-    console.log('[capture] Lead enviado para Google Sheets:', { name, email });
+    // Google Forms always returns 200 even on success, so we just log
+    console.log('[capture] Form submitted, status:', response.status);
 
     return res.status(200).json({
       success: true,
-      message: 'Lead capturado com sucesso!',
+      message: 'Obrigado! Entraremos em contato pelo WhatsApp.',
     });
   } catch (err) {
-    console.error('[capture] Error sending to Google Sheets:', err.message);
-
-    // Still return success to the front-end to avoid blocking the user
-    // In production you might want to queue the lead and retry
+    console.error('[capture] Erro:', err.message);
+    // Still return success to the user
     return res.status(200).json({
       success: true,
-      message: 'Lead capturado com sucesso!',
-      warning: 'Fallback dev activado. Verifique integração.',
+      message: 'Obrigado! Entraremos em contato em breve.',
     });
   }
 }

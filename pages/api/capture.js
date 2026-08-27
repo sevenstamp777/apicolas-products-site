@@ -4,8 +4,8 @@
 //   - "Nome completo" (field 1965630165) -> entry.699971494
 //   - "WhatsApp com DDD" (field 957987546) -> entry.1331367221
 //
-// NOTE: The Google Form only has 2 fields. We combine name+email into the
-// "Nome completo" field and send WhatsApp separately.
+// NOTE: The Google Form has email field configured to use logged-in user's email.
+// We combine name+email into the "Nome completo" field and send WhatsApp separately.
 
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScD9k-DPwKzHXYXYMLqCbZN_p9W-hj8idCn9ldaQhttkJrx-w/formResponse';
 

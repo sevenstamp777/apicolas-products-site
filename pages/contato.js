@@ -1,6 +1,43 @@
+import { useState } from 'react';
 import Layout from '../components/layout';
 
 export default function ContatoPage() {
+  const [formData, setFormData] = useState({ nome: '', email: '', whatsapp: '' });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/capture', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.nome,
+          email: formData.email,
+          whatsapp: formData.whatsapp,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSuccess(true);
+        setFormData({ nome: '', email: '', whatsapp: '' });
+      } else {
+        setError(data.error || 'Erro ao enviar. Tente novamente.');
+      }
+    } catch (err) {
+      setError('Erro de conexão. Tente novamente.');
+    }
+
+    setLoading(false);
+  };
+
   return (
     <Layout>
       <main className="min-h-screen bg-[var(--bg)]">
@@ -88,87 +125,85 @@ export default function ContatoPage() {
             </div>
 
             <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-8">
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="nome" className="block text-sm font-medium text-[var(--fg)] mb-2">
-                      Nome
-                    </label>
-                    <input
-                      id="nome"
-                      type="text"
-                      name="nome"
-                      placeholder="Seu nome completo"
-                      required
-                      className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder-text-[var(--muted)]"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-[var(--fg)] mb-2">
-                      E-mail
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      name="email"
-                      placeholder="seu@email.com"
-                      required
-                      className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder-text-[var(--muted)]"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="telefone" className="block text-sm font-medium text-[var(--fg)] mb-2">
-                    WhatsApp
-                  </label>
-                  <input
-                    id="telefone"
-                    type="tel"
-                    name="telefone"
-                    placeholder="(11) 99999-9999"
-                    className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder-text-[var(--muted)]"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="assunto" className="block text-sm font-medium text-[var(--fg)] mb-2">
-                    Assunto
-                  </label>
-                  <select
-                    id="assunto"
-                    name="assunto"
-                    className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors text-[var(--fg)]"
+              {success ? (
+                <div className="text-center py-8">
+                  <div className="text-5xl mb-4">✅</div>
+                  <h3 className="font-display text-2xl font-bold text-[var(--accent-light)] mb-2">
+                    Mensagem enviada!
+                  </h3>
+                  <p className="text-[var(--muted)] mb-6">
+                    Obrigado! Entraremos em contato pelo WhatsApp em breve.
+                  </p>
+                  <button
+                    onClick={() => setSuccess(false)}
+                    className="px-6 py-3 bg-[var(--accent)]/10 text-[var(--accent-light)] rounded-xl font-medium hover:bg-[var(--accent)]/20 transition-colors"
                   >
-                    <option value="">Selecione um assunto</option>
-                    <option value="pedido">Pedido / Orçamento</option>
-                    <option value="duvida">Dúvida sobre produtos</option>
-                    <option value="parceria">Parceria / Revenda</option>
-                    <option value="outro">Outro</option>
-                  </select>
+                    Enviar outra mensagem
+                  </button>
                 </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  {error && (
+                    <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-xl text-red-400 text-sm">
+                      {error}
+                    </div>
+                  )}
 
-                <div>
-                  <label htmlFor="mensagem" className="block text-sm font-medium text-[var(--fg)] mb-2">
-                    Mensagem
-                  </label>
-                  <textarea
-                    id="mensagem"
-                    name="mensagem"
-                    rows="5"
-                    placeholder="Escreva sua mensagem aqui..."
-                    required
-                    className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder-text-[var(--muted)] resize-y"
-                  />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="nome" className="block text-sm font-medium text-[var(--fg)] mb-2">
+                        Nome completo *
+                      </label>
+                      <input
+                        id="nome"
+                        type="text"
+                        value={formData.nome}
+                        onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
+                        placeholder="Seu nome completo"
+                        required
+                        className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder:text-[var(--muted)]"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-[var(--fg)] mb-2">
+                        E-mail *
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        placeholder="seu@email.com"
+                        required
+                        className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder:text-[var(--muted)]"
+                      />
+                    </div>
                   </div>
 
-                <button
-                  type="submit"
-                  className="w-full px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent-light)] text-white font-semibold rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30"
-                >
-                  Enviar Mensagem
-                </button>
-              </form>
+                  <div>
+                    <label htmlFor="whatsapp" className="block text-sm font-medium text-[var(--fg)] mb-2">
+                      WhatsApp com DDD *
+                    </label>
+                    <input
+                      id="whatsapp"
+                      type="tel"
+                      value={formData.whatsapp}
+                      onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
+                      placeholder="(11) 99999-9999"
+                      required
+                      className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder:text-[var(--muted)]"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent-light)] text-white font-semibold rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-[var(--accent)]/30 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {loading ? 'Enviando...' : 'Enviar Mensagem'}
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </section>

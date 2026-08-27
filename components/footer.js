@@ -14,7 +14,7 @@ export default function Footer() {
                 🐝
               </div>
               <span className="font-display font-semibold text-lg text-[var(--fg)]">
-                Apiários &amp; Cia
+                Mel, Própolis &amp; Cia
               </span>
             </div>
             <p className="text-[var(--muted)] text-sm max-w-md leading-relaxed">
@@ -55,7 +55,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-[var(--border)] text-center">
           <p className="text-[var(--muted)] text-xs">
-            © {currentYear} Apiários &amp; Cia. Todos os direitos reservados.
+            © {currentYear} Mel, Própolis &amp; Cia. Todos os direitos reservados.
           </p>
         </div>
       </div>

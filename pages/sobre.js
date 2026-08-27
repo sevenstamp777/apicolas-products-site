@@ -11,7 +11,7 @@ export default function SobrePage() {
                 Sobre Nós
               </h1>
               <p className="text-[var(--muted)] max-w-2xl mx-auto leading-relaxed">
-                Na Apiários & Cia, temos orgulho de trabalhar diretamente com a natureza. Fundada em 2023 por entusiastas da apicultura, nossa missão é trazer para você os benefícios puros dos produtos da colmeia e do apiário, com qualidade excepcional e procedência transparente.
+                Na Mel, Própolis & Cia, temos orgulho de trabalhar diretamente com a natureza. Fundada em 2023 por entusiastas da apicultura, nossa missão é trazer para você os benefícios puros dos produtos da colmeia e do apiário, com qualidade excepcional e procedência transparente.
               </p>
             </div>
 

@@ -11,7 +11,7 @@ export default function Header() {
               🐝
             </div>
             <span className="font-display font-semibold text-lg text-[var(--fg)]">
-              Apiários &amp; Cia
+              Mel, Própolis &amp; Cia
             </span>
           </Link>
 

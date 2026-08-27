@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <img src="/logo.png" alt="Mel, Própolis & Cia" className="w-9 h-9 rounded-full" />
+              <img src="/bee-icon.svg" alt="Mel, Própolis & Cia" className="w-10 h-10" />
               <span className="font-display font-semibold text-lg text-[var(--fg)]">
                 Mel, Própolis &amp; Cia
               </span>

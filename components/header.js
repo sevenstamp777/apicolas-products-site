@@ -7,7 +7,7 @@ export default function Header() {
         <nav className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <img src="/logo.png" alt="Mel, Própolis & Cia" className="w-9 h-9 rounded-full transition-transform group-hover:scale-110" />
+            <img src="/bee-icon.svg" alt="Mel, Própolis & Cia" className="w-10 h-10 transition-transform group-hover:scale-110" />
             <span className="font-display font-semibold text-lg text-[var(--fg)]">
               Mel, Própolis &amp; Cia
             </span>

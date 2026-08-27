@@ -28,7 +28,7 @@ export default function Home({ products }) {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32">
           <div className="text-center max-w-3xl mx-auto">
             <div className="flex justify-center mb-8">
-              <img src="/logo.svg" alt="Mel, Própolis & Cia" className="w-40 h-40 md:w-52 md:h-52 drop-shadow-lg" />
+              <img src="/logo.png" alt="Mel, Própolis & Cia" className="w-40 h-40 md:w-52 md:h-52 drop-shadow-lg rounded-full" />
             </div>
             <span className="inline-block px-3 py-1 rounded-full bg-[var(--accent)]/10 text-[var(--amber)] text-xs font-medium border border-[var(--amber)]/20 mb-6">
               🐝 100% Natural · Direto do Apiário

@@ -1,11 +1,11 @@
 // Capture API - sends leads to Google Forms
-// Form ID: 13llb0_a_v1rcN820NAs7ZFOfK8MiXj9gPc-vbk94eM8
+// Form ID: 1FAIpQLSel9Wc9W5Rflgg4p7MPywWGbxKz46csoFGCY8gjbjxIz0LE-Q
 // Fields:
-//   - "Nome completo" -> entry.699971494
-//   - "Seu melhor e-mail" -> entry.1350414018
-//   - "WhatsApp com DDD" -> entry.1331367221
+//   - "Nome completo" -> entry.603056903
+//   - "Seu melhor e-mail" -> entry.1899263815
+//   - "WhatsApp com DDD" -> entry.544565653
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScD9k-DPwKzHXYXYMLqCbZN_p9W-hj8idCn9ldaQhttkJrx-w/formResponse';
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSel9Wc9W5Rflgg4p7MPywWGbxKz46csoFGCY8gjbjxIz0LE-Q/formResponse';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -26,9 +26,9 @@ export default async function handler(req, res) {
 
   try {
     const formData = new URLSearchParams();
-    formData.append('entry.699971494', cleanName);
-    formData.append('entry.1350414018', cleanEmail);
-    formData.append('entry.1331367221', cleanWhatsapp);
+    formData.append('entry.603056903', cleanName);
+    formData.append('entry.1899263815', cleanEmail);
+    formData.append('entry.544565653', cleanWhatsapp);
 
     const response = await fetch(GOOGLE_FORM_URL, {
       method: 'POST',

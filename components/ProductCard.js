@@ -5,7 +5,7 @@ export default function ProductCard({ product }) {
     <Link href={`/produtos/${product.id}`} className="group block">
       <div className="rounded-2xl bg-[var(--card)] border border-[var(--border)] overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-black/20 group-hover:border-[var(--accent)]/40">
         {/* Image */}
-        <div className="h-48 bg-gradient-to-br from-[var(--accent)]/5 via-[var(--accent-light)]/10 to-[var(--honey)]/5 border-b border-[var(--border)] flex items-center justify-center overflow-hidden">
+        <div className="h-40 bg-gradient-to-br from-[var(--accent)]/5 via-[var(--accent-light)]/10 to-[var(--honey)]/5 border-b border-[var(--border)] flex items-center justify-center overflow-hidden">
           {product.image ? (
             <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           ) : (
@@ -13,7 +13,7 @@ export default function ProductCard({ product }) {
           )}
         </div>
 
-        <div className="p-6 space-y-4">
+        <div className="p-4 space-y-3">
           {/* Category badge */}
           <div className="flex items-center justify-between">
             <span className="inline-block px-2.5 py-0.5 rounded-full bg-[var(--accent)]/10 text-[var(--amber)] text-xs font-medium border border-[var(--amber)]/20">
@@ -26,7 +26,7 @@ export default function ProductCard({ product }) {
 
           {/* Product info */}
           <div>
-            <h3 className="font-display font-semibold text-xl text-[var(--fg)] group-hover:text-[var(--amber)] transition-colors">
+            <h3 className="font-display font-semibold text-lg text-[var(--fg)] group-hover:text-[var(--amber)] transition-colors">
               {product.name}
             </h3>
             <p className="text-sm text-[var(--muted)] mt-1 line-clamp-2">
@@ -35,8 +35,8 @@ export default function ProductCard({ product }) {
           </div>
 
           {/* Pricing */}
-          <div className="flex items-center gap-3">
-            <span className="text-2xl font-bold text-[var(--accent)]">
+          <div className="flex items-center gap-2">
+            <span className="text-xl font-bold text-[var(--accent)]">
               {product.price}
             </span>
             {product.oldPrice && (

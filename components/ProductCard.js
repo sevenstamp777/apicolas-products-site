@@ -4,9 +4,13 @@ export default function ProductCard({ product }) {
   return (
     <Link href={`/produtos/${product.id}`} className="group block">
       <div className="rounded-2xl bg-[var(--card)] border border-[var(--border)] overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:shadow-black/20 group-hover:border-[var(--accent)]/40">
-        {/* Image placeholder */}
-        <div className="h-48 bg-gradient-to-br from-[var(--accent)]/5 via-[var(--accent-light)]/10 to-[var(--honey)]/5 border-b border-[var(--border)] flex items-center justify-center">
-          <span className="text-5xl">{product.category === 'Própolis' ? '🛡️' : '🍯'}</span>
+        {/* Image */}
+        <div className="h-48 bg-gradient-to-br from-[var(--accent)]/5 via-[var(--accent-light)]/10 to-[var(--honey)]/5 border-b border-[var(--border)] flex items-center justify-center overflow-hidden">
+          {product.image ? (
+            <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          ) : (
+            <span className="text-5xl">{product.category === 'Própolis' ? '🛡️' : '🍯'}</span>
+          )}
         </div>
 
         <div className="p-6 space-y-4">

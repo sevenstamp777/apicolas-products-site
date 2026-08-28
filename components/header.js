@@ -32,7 +32,7 @@ export default function Header() {
           {/* CTA */}
           <div className="flex items-center gap-3">
             <a
-              href={`https://wa.me/55${process.env.NEXT_PUBLIC_WHATSAPP || '11999999999'}`}
+              href={`https://wa.me/55${process.env.NEXT_PUBLIC_WHATSAPP || '18997130824'}`}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex items-center gap-2 px-4 py-2 bg-[var(--honey)] hover:bg-[var(--amber)] text-[var(--bg)] text-sm font-medium rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--honey)]/20"

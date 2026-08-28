@@ -44,8 +44,8 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-[var(--fg)] mb-4 text-sm">Contato</h4>
             <ul className="space-y-2 text-sm text-[var(--muted)]">
-              <li>{process.env.NEXT_PUBLIC_EMAIL || 'contato@apiarioscia.com.br'}</li>
-              <li>WhatsApp: {process.env.NEXT_PUBLIC_WHATSAPP || '(11) 99999-9999'}</li>
+              <li>{process.env.NEXT_PUBLIC_EMAIL || 'melpropolis.cia@gmail.com'}</li>
+              <li>WhatsApp: {process.env.NEXT_PUBLIC_WHATSAPP || '(18) 99713-0824'}</li>
             </ul>
           </div>
         </div>

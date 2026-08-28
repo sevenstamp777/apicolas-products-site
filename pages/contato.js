@@ -67,14 +67,14 @@ export default function ContatoPage() {
                   title: 'WhatsApp',
                   desc: 'Atendimento rápido e direto',
                   value: '(11) 99999-9999',
-                  action: 'https://wa.me/5511999999999',
+                  action: 'https://wa.me/5518997130824',
                 },
                 {
                   icon: '📧',
                   title: 'E-mail',
                   desc: 'Respostas em até 24h',
-                  value: 'contato@apiarioscia.com.br',
-                  action: 'mailto:contato@apiarioscia.com.br',
+                  value: 'melpropolis.cia@gmail.com',
+                  action: 'mailto:melpropolis.cia@gmail.com',
                 },
                 {
                   icon: '📍',

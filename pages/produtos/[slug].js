@@ -114,7 +114,7 @@ export default function ProductDetailPage({ product }) {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3 pt-4">
                   <a
-                    href="https://wa.me/5511999999999"
+                    href="https://wa.me/5518997130824"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 bg-[var(--honey)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-[var(--honey)]/30"
@@ -212,7 +212,7 @@ export default function ProductDetailPage({ product }) {
               Qualidade assegurada direto do apiário. Fale conosco pelo WhatsApp e receba orientação personalizada.
             </p>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5518997130824"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-10 py-5 bg-[var(--honey)] hover:bg-[var(--amber)] text-[var(--bg)] font-bold text-lg rounded-xl transition-all hover:shadow-xl hover:shadow-[var(--honey)]/30"

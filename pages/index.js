@@ -51,7 +51,7 @@ export default function Home({ products }) {
                 Ver Produtos
               </a>
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5518997130824"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-[var(--card)] hover:bg-[var(--border)] text-[var(--fg)] font-semibold rounded-lg transition-all border border-[var(--border)]"
@@ -113,7 +113,7 @@ export default function Home({ products }) {
             para sua rotina e necessidades.
           </p>
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5518997130824"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--honey)] hover:bg-[var(--amber)] text-[var(--bg)] font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-[var(--honey)]/30"

@@ -4,6 +4,7 @@
 //   - "Nome completo" -> entry.603056903
 //   - "Seu melhor e-mail" -> entry.1899263815
 //   - "WhatsApp com DDD" -> entry.544565653
+//   - "Deixe sua mensagem" -> entry.688312707
 
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSel9Wc9W5Rflgg4p7MPywWGbxKz46csoFGCY8gjbjxIz0LE-Q/formResponse';
 

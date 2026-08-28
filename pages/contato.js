@@ -66,7 +66,7 @@ export default function ContatoPage() {
                   icon: '📱',
                   title: 'WhatsApp',
                   desc: 'Atendimento rápido e direto',
-                  value: '(11) 99999-9999',
+                  value: '(18) 99713-0824',
                   action: 'https://wa.me/5518997130824',
                 },
                 {

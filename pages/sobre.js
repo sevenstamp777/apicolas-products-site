@@ -22,7 +22,7 @@ export default function SobrePage() {
                   Nossa História
                 </h3>
                 <p className="text-[var(--muted)] text-sm">
-                  Tudo começou quando nossa fundadora, Erick Garcia, descobriu os benefícios da própolis verde 30% para a saúde respiratória. Desde então, dedicamo-nos a produzir produtos apícolas de alta qualidade, conectando apiários locais com consumidores conscientes.
+                  Tudo começou quando nosso fundador, Erick Garcia, descobriu os benefícios da própolis verde 30% para a saúde respiratória. Desde então, dedicamo-nos a produzir produtos apícolas de alta qualidade, conectando apiários locais com consumidores conscientes.
                 </p>
               </div>
 

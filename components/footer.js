@@ -21,9 +21,6 @@ export default function Footer() {
             </p>
             <div className="flex gap-4 mt-6">
               <a href="#" className="text-[var(--muted)] hover:text-[var(--amber)] transition-colors">
-                Instagram
-              </a>
-              <a href="#" className="text-[var(--muted)] hover:text-[var(--amber)] transition-colors">
                 WhatsApp
               </a>
             </div>

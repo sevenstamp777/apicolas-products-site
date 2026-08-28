@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Layout from '../components/layout';
 
 export default function ContatoPage() {
-  const [formData, setFormData] = useState({ nome: '', email: '', whatsapp: '' });
+  const [formData, setFormData] = useState({ nome: '', email: '', whatsapp: '', mensagem: '' });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
@@ -20,6 +20,7 @@ export default function ContatoPage() {
           name: formData.nome,
           email: formData.email,
           whatsapp: formData.whatsapp,
+          message: formData.mensagem,
         }),
       });
 
@@ -27,7 +28,7 @@ export default function ContatoPage() {
 
       if (data.success) {
         setSuccess(true);
-        setFormData({ nome: '', email: '', whatsapp: '' });
+        setFormData({ nome: '', email: '', whatsapp: '', mensagem: '' });
       } else {
         setError(data.error || 'Erro ao enviar. Tente novamente.');
       }
@@ -192,6 +193,20 @@ export default function ContatoPage() {
                       placeholder="(11) 99999-9999"
                       required
                       className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder:text-[var(--muted)]"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="mensagem" className="block text-sm font-medium text-[var(--fg)] mb-2">
+                      Mensagem
+                    </label>
+                    <textarea
+                      id="mensagem"
+                      value={formData.mensagem}
+                      onChange={(e) => setFormData({ ...formData, mensagem: e.target.value })}
+                      placeholder="Como podemos ajudar?"
+                      rows={4}
+                      className="w-full px-4 py-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder:text-[var(--muted)] resize-none"
                     />
                   </div>
 

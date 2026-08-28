@@ -411,7 +411,6 @@ GOOGLE_APPS_SCRIPT_URL=https://script.google.com/macros/s/SEU_ID/exec
 NEXT_PUBLIC_SITE_URL=https://melpropolis.cia.com.br
 NEXT_PUBLIC_WHATSAPP=5511999999999
 NEXT_PUBLIC_EMAIL=contato@melpropolis.cia.com.br
-NEXT_PUBLIC_INSTAGRAM=@melpropolis.cia
 GOOGLE_APPS_SCRIPT_URL=https://script.google.com/macros/s/SEU_ID/exec
 # Futuro:
 # SENDPULSE_CLIENT_ID=

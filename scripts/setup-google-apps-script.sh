@@ -69,7 +69,7 @@ if [[ $REPLY =~ ^[Ss]$ ]]; then
         echo "   vercel --prod"
         echo ""
         echo "2. Teste a API:"
-        echo "   curl -X POST https://products-site-gamma.vercel.app/api/capture \\"
+        echo "   curl -X POST https://melpropolis-cia.vercel.app/api/capture \\"
         echo "     -H 'Content-Type: application/json' \\"
         echo "     -d '{\"name\":\"Teste\",\"email\":\"teste@teste.com\",\"whatsapp\":\"11999999999\"}'"
         echo ""

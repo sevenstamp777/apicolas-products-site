@@ -37,7 +37,7 @@ Este guia mostra como configurar o webhook do Google Apps Script para receber le
 
 ### Passo 5: Teste
 ```bash
-curl -X POST "https://products-site-gamma.vercel.app/api/capture" \
+curl -X POST "https://melpropolis-cia.vercel.app/api/capture" \
   -H "Content-Type: application/json" \
   -d '{"name":"Teste","email":"teste@email.com","whatsapp":"11999999999"}'
 ```

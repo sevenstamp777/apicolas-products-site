@@ -159,7 +159,7 @@ function testarEnvio() {
   // Use a API Node.js para testar
   
   Logger.log('Para testar o envio, use a API Node.js:');
-  Logger.log('curl -X POST https://products-site-gamma.vercel.app/api/capture \\');
+  Logger.log('curl -X POST https://melpropolis-cia.vercel.app/api/capture \\');
   Logger.log('  -H "Content-Type: application/json" \\');
   Logger.log('  -d \'{"name":"Teste","email":"teste@teste.com","whatsapp":"11999999999"}\'');
 }

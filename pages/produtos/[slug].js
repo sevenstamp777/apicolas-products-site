@@ -39,7 +39,7 @@ export default function ProductDetailPage({ product }) {
           <nav className="flex items-center gap-2 text-sm text-[var(--muted)]">
             <Link href="/" className="hover:text-[var(--fg)] transition-colors">Início</Link>
             <span>/</span>
-            <Link href="/produtos" className="hover:text-[var(--fg)] transition-colors">Produtos</Link>
+            <Link href="/#produtos" className="hover:text-[var(--fg)] transition-colors">Produtos</Link>
             <span>/</span>
             <span className="text-[var(--fg)]">{product.name}</span>
           </nav>

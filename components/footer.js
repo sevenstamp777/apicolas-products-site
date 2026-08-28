@@ -34,7 +34,7 @@ export default function Footer() {
             <h4 className="font-semibold text-[var(--fg)] mb-4 text-sm">Navegação</h4>
             <ul className="space-y-2">
               <li><Link href="/" className="text-[var(--muted)] hover:text-[var(--fg)] text-sm transition-colors">Início</Link></li>
-              <li><Link href="/produtos" className="text-[var(--muted)] hover:text-[var(--fg)] text-sm transition-colors">Produtos</Link></li>
+              <li><Link href="/#produtos" className="text-[var(--muted)] hover:text-[var(--fg)] text-sm transition-colors">Produtos</Link></li>
               <li><Link href="/sobre" className="text-[var(--muted)] hover:text-[var(--fg)] text-sm transition-colors">Sobre</Link></li>
               <li><Link href="/contato" className="text-[var(--muted)] hover:text-[var(--fg)] text-sm transition-colors">Contato</Link></li>
             </ul>

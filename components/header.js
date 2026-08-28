@@ -18,7 +18,7 @@ export default function Header() {
             <Link href="/" className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors text-sm font-medium">
               Início
             </Link>
-            <Link href="/produtos" className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors text-sm font-medium">
+            <Link href="/#produtos" className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors text-sm font-medium">
               Produtos
             </Link>
             <Link href="/sobre" className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors text-sm font-medium">

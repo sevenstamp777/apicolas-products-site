@@ -50,7 +50,7 @@ export default function ProductDetailPage({ product }) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Product Image */}
             <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden bg-[var(--card)] border border-[var(--border)]">
+              <div className="w-full max-w-lg mx-auto aspect-square rounded-3xl overflow-hidden bg-[var(--card)] border border-[var(--border)]">
                 <img
                   src={imagePath}
                   alt={product.name}

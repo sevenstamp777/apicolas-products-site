@@ -1,0 +1,26 @@
+{
+  "id": "mel-de-jatai",
+  "name": "Mel de Jataí 60ml",
+  "subtitle": "Raro mel de abelha sem ferrão",
+  "category": "Mel",
+  "strength": "100% puro artesanal",
+  "description": "Mel de Jataí 60ml, produzido pela abelha nativa brasileira sem ferrão (Tetragonisca angustula). Um dos méis mais raros e valorizados do mundo, com incrível qualidade medicinal: antibiótico, antioxidante, anti-inflamatório e auxilia no combate à catarata. Pasteurizado e lacrado, sem contato externo.",
+  "benefits": [
+    "Ação antibacteriana natural superior",
+    "Antioxidante e anti-inflamatório",
+    "Auxilia no combate e prevenção da catarata",
+    "Um dos méis mais raros e puros do mundo"
+  ],
+  "usage": "Consumir puro, gota a gota, puro ou diluído. Uso medicinal e alimentar. Não aquecer.",
+  "dosage": "1-2 colheres de chá ao dia",
+  "presentation": "Frasco de vidro 60ml",
+  "shelfLife": "2 anos",
+  "storage": "Local seco, temperatura ambiente",
+  "image": "/products/mel-de-jatai.jpg",
+  "certifications": ["Puro", "Artesanal", "Abelha sem ferrão"],
+  "ingredients": ["Mel de abelha sem ferrão Jataí (100%)"],
+  "origin": "Meliponicultura brasileira, abelha nativa sem ferrão",
+  "weight": 0.08,
+  "price": "R$ 55,00",
+  "oldPrice": ""
+}

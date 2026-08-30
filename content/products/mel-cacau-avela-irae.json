@@ -1,0 +1,26 @@
+{
+  "id": "mel-cacau-avela-irae",
+  "name": "Mel Cacau & Avelã Iraê 200g",
+  "subtitle": "O melhor chocolate de mel do mundo",
+  "category": "Mel",
+  "strength": "Composto premium",
+  "description": "O Mel Cacau & Avelã Iraê® 200g é um deleite artesanal que combina mel 100% puro, cacau premium e avelãs. Equilibra a doçura natural do mel com a intensidade do cacau, criando uma textura suave e cremosa. Livre de conservantes e aditivos artificiais.",
+  "benefits": [
+    "Sabor único de mel com cacau e avelã",
+    "Ingredientes naturais e sem conservantes",
+    "Textura cremosa e rápida no paladar",
+    "Alternativa saudável aos chocolates industrializados"
+  ],
+  "usage": "Consumir puro, sobre frutas, pães e torradas, ou como cobertura de sobremesas.",
+  "dosage": "A gosto, 1-2 colheres de sopa ao dia",
+  "presentation": "Pote de vidro 200g",
+  "shelfLife": "2 anos",
+  "storage": "Local seco, temperatura ambiente",
+  "image": "/products/mel-cacau-avela-irae.jpg",
+  "certifications": ["Artesanal", "Sem aditivos", "Marca Iraê"],
+  "ingredients": ["Mel puro", "Cacau premium", "Avelã"],
+  "origin": "Apiário em Itapetininga, SP – Cacau do Maranhão",
+  "weight": 0.2,
+  "price": "R$ 45,00",
+  "oldPrice": ""
+}

@@ -1,0 +1,26 @@
+{
+  "id": "mel-gourmet-silvestre",
+  "name": "Mel Gourmet 450g Silvestre",
+  "subtitle": "Mel cru em embalagem gourmet de vidro",
+  "category": "Mel",
+  "strength": "100% cru e puro",
+  "description": "Mel cru, florada silvestre, multifloral por natureza. Um mel que adoça bem sem alterar o sabor dos alimentos. Perfeito para receitas, chás e consumo diário. Direto do apiário, embalado em pote de vidro gourmet. Mel 100% puro, sem processamento.",
+  "benefits": [
+    "Mel cru, mantém enzimas naturais",
+    "Adoça sem alterar o sabor dos alimentos",
+    "Fonte natural de energia",
+    "Ideal para receitas e uso diário"
+  ],
+  "usage": "Consumir puro, com frutas, chás, receitas e bebidas. Não aquecer acima de 40°C para preservar as propriedades.",
+  "dosage": "1-2 colheres de sopa ao dia",
+  "presentation": "Pote de vidro gourmet 450g",
+  "shelfLife": "2 anos",
+  "storage": "Local seco, temperatura ambiente",
+  "image": "/products/mel-gourmet-silvestre.jpg",
+  "certifications": ["Cru", "Puro", "Gourmet"],
+  "ingredients": ["Mel de flores silvestres (100%)"],
+  "origin": "Apiário em Itu, São Paulo, SP – Brasil",
+  "weight": 0.45,
+  "price": "R$ 53,00",
+  "oldPrice": ""
+}

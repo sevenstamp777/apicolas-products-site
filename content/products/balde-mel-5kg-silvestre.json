@@ -1,0 +1,26 @@
+{
+  "id": "balde-mel-5kg-silvestre",
+  "name": "Balde de Mel 5Kg Silvestre",
+  "subtitle": "Mel puro em balde, direto do produtor",
+  "category": "Mel",
+  "strength": "100% puro",
+  "description": "Balde de mel silvestre 5kg, perfeito para quem consome muito ou quer revender. Mel 100% puro, direto do apiário, produzido de forma artesanal por pequenos produtores com certificado de qualidade. Florada predominante silvestre e eucalipto.",
+  "benefits": [
+    "Ótimo custo-benefício para consumo diário e revenda",
+    "Fonte natural de energia",
+    "Fortalece o sistema imunológico",
+    "Auxilia no processo de digestão"
+  ],
+  "usage": "Consumir puro, com frutas, chás ou receitas. Ideal para uso diário em toda a família ou para revenda.",
+  "dosage": "1-2 colheres de sopa ao dia",
+  "presentation": "Balde plástico 5kg com tampa",
+  "shelfLife": "2 anos",
+  "storage": "Local seco, temperatura ambiente",
+  "image": "/products/balde-mel-5kg-silvestre.jpg",
+  "certifications": ["Puro", "Artesanal", "Direto do produtor"],
+  "ingredients": ["Mel de flores silvestres (100%)", "Eucalipto"],
+  "origin": "Apiário em Itu, São Paulo, SP – Brasil",
+  "weight": 5,
+  "price": "R$ 199,00",
+  "oldPrice": "R$ 219,00"
+}

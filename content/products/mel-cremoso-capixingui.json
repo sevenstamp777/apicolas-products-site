@@ -1,0 +1,26 @@
+{
+  "id": "mel-cremoso-capixingui",
+  "name": "Mel Cremoso 200g Capixingui",
+  "subtitle": "Textura cremosa e suave da florada de capixingui",
+  "category": "Mel",
+  "strength": "Cremoso artesanal",
+  "description": "Mel cremoso com predominância da florada de capixingui. Um mel claro, com doce textura cremosa e suave, perfeito para combinar com queijos fortes, pimenta e pães. Produzido artesanalmente pela marca Iraê, direto do apiário em Itapetininga, SP.",
+  "benefits": [
+    "Textura cremosa e espalhável",
+    "Combina com queijos, pães e frutas",
+    "Sabor suave e delicado",
+    "Produzido artesanalmente"
+  ],
+  "usage": "Passar em pães, torradas, frutas ou combinar com queijos e pimenta. Consumir puro ou em receitas.",
+  "dosage": "1-2 colheres de sopa ao dia",
+  "presentation": "Pote de vidro 200g",
+  "shelfLife": "2 anos",
+  "storage": "Local seco, temperatura ambiente",
+  "image": "/products/mel-cremoso-capixingui.jpg",
+  "certifications": ["Artesanal", "Cremoso", "Marca Iraê"],
+  "ingredients": ["Mel de flores silvestres (100%)", "Predominante capixingui"],
+  "origin": "Apiário em Itapetininga, São Paulo, SP – Brasil",
+  "weight": 0.2,
+  "price": "R$ 45,00",
+  "oldPrice": ""
+}

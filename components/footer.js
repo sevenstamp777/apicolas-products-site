@@ -20,7 +20,12 @@ export default function Footer() {
               Própolis verde, mel puro e derivados com qualidade premium.
             </p>
             <div className="flex gap-4 mt-6">
-              <a href="#" className="text-[var(--muted)] hover:text-[var(--amber)] transition-colors">
+              <a
+                href="https://wa.me/5518997130824"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--muted)] hover:text-[var(--amber)] transition-colors"
+              >
                 WhatsApp
               </a>
             </div>
@@ -42,7 +47,16 @@ export default function Footer() {
             <h4 className="font-semibold text-[var(--fg)] mb-4 text-sm">Contato</h4>
             <ul className="space-y-2 text-sm text-[var(--muted)]">
               <li>{process.env.NEXT_PUBLIC_EMAIL || 'melpropolis.cia@gmail.com'}</li>
-              <li>WhatsApp: {process.env.NEXT_PUBLIC_WHATSAPP || '(18) 99713-0824'}</li>
+              <li>
+                <a
+                  href="https://wa.me/5518997130824"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[var(--amber)] transition-colors"
+                >
+                  WhatsApp: (18) 99713-0824
+                </a>
+              </li>
             </ul>
           </div>
         </div>
